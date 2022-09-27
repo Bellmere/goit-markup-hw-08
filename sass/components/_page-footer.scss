@@ -9,14 +9,26 @@
     gap: 60px 0;
     justify-content: center;
     text-align: center;
+
+    @media screen and (min-width: 1200px) {
+      flex-direction: none;
+      gap: 0;
+      justify-content: space-between;
+      text-align: none;
+    }
   }
   
   .info-wraper {
     @media screen and (min-width: 768px) {
         display: flex;
-        align-items: baseline;
         padding-right: 74px;
         padding-left: 61px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      align-items: none;
+      padding: 0;
+      width: 50%;
     }
   }
   
@@ -31,6 +43,10 @@
     text-transform: uppercase;
   
     color: var(--primary-white-color);
+
+    @media screen and (min-width: 1200px) {
+      text-align: left;
+    }
   }
 
   .adress-list__item {
@@ -68,7 +84,7 @@
     margin: 0;
 
     @media screen and (min-width: 768px) {
-        padding-top: 0;
+        padding-top: 5px;
         margin-left: auto;
     }
   }
