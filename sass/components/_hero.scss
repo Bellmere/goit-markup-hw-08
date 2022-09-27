@@ -59,5 +59,10 @@
   
     align-items: center;
     text-align: center;
+
+    &:hover,
+    &:focus {
+      background-color: var(--btn-hero-color);
+    }
   
   }
