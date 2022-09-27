@@ -32,6 +32,11 @@
 
   fill: var(--primary-white-color);
 
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+    margin-left: 12px;
+  }
+
   &__label {
     display: flex;
     align-items: center;
