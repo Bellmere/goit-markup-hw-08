@@ -185,8 +185,14 @@ body {
 }
 
 .container-hero--padding {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+}
+@media screen and (min-width: 1200px) {
+  .container-hero--padding {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .section-hero--overlay {
@@ -206,11 +212,23 @@ body {
   margin-bottom: 30px;
   color: var(--primary-white-color);
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .section-hero__title {
+    padding: 0 189px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-hero__title {
+    padding: 0 237px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .section-hero__btn {
