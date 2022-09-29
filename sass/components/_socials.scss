@@ -4,7 +4,7 @@
     justify-content: center;
     padding-bottom: 24px;
 
-    @media screen and (max-width: 1199px) {
+    @media screen and (min-width: 1200px) {
       padding-bottom: 30px;
     }
   }
