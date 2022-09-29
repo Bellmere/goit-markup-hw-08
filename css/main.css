@@ -394,16 +394,6 @@ body {
   min-height: 460px;
   object-fit: cover;
 }
-@media screen and (min-width: 768px) {
-  .team__card__photo {
-    min-height: 374px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .team__card__photo {
-    min-height: 260px;
-  }
-}
 
 .team__card {
   display: flex;

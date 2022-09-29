@@ -27,13 +27,13 @@
     min-height: 460px;
     object-fit: cover;
 
-    @media screen and (min-width: 768px) {
-        min-height: 374px;
-    }
+    // @media screen and (min-width: 768px) {
+    //     min-height: 374px;
+    // }
 
-    @media screen and (min-width: 1200px) {
-        min-height: 260px;
-    }
+    // @media screen and (min-width: 1200px) {
+    //     min-height: 260px;
+    // }
   }
   
   .team__card {
