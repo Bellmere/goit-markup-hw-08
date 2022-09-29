@@ -391,7 +391,7 @@ body {
 
 .team__card__photo {
   width: 100%;
-  min-height: 460px;
+  height: auto;
   object-fit: cover;
 }
 
