@@ -162,6 +162,25 @@ body {
   margin-right: 10px;
 }
 
+.page-header {
+  border-bottom: 1px solid var(--header-border-color);
+}
+
+.site-nav {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 60px;
+}
+
+.menu-btn {
+  display: inline-flex;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+}
+
 .logo {
   display: inline-block;
   padding: 0;
