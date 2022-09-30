@@ -181,6 +181,10 @@ body {
   background-color: transparent;
 }
 
+.menu-btn__icon__cross {
+  display: none;
+}
+
 .logo {
   display: inline-block;
   padding: 0;
