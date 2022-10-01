@@ -1,11 +1,48 @@
 .menu-btn {
     display: inline-flex;
+    position: relative;
+    z-index: 999;
     padding: 0;
     margin: 0;
     border: none;
     background-color: transparent;
+
+    @media screen and (min-width:768px) {
+        display: none;
+    }
 }
 
-.menu-btn__icon__cross {
+.menu-btn__icon__menu {
     display: none;
+}
+
+.menu-btn.is-open .menu-btn__icon__menu {
+    display: block;
+}
+
+.menu-btn.is-open .menu-btn__icon__close {
+    display: none;
+}
+
+.menu-container {
+
+    @media screen and (max-width: 767px) {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 796px;
+        overflow-y: scroll;
+        background-color: var(--primary-white-color);
+        padding: 48px 83px 48px 40px;
+
+        &.is-open {
+            display: block;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
 }

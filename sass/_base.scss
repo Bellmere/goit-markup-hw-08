@@ -6,6 +6,14 @@ body {
     letter-spacing: 0.03em;
   }
 
+  img {
+    display: block;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
   .wraper {
     min-height: 100%;
     display: flex;
