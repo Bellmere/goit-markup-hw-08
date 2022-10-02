@@ -1,39 +1,39 @@
 .logo {
-    width: 134px;
-    display: inline-block;
-    padding: 0;
-    margin: 0;
+  width: 134px;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
 
-    color: var(--accent-color);
-    font-family: Raleway, serif;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.17;
-    border: none;
-    letter-spacing: 0.03em;
-  
-    text-decoration: none;
+  color: var(--accent-color);
+  font-family: Raleway, serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  border: none;
+  letter-spacing: 0.03em;
 
-    @media screen and (max-width: 767px) {
-      padding: 16px 0 15px 0;
-    }
+  text-decoration: none;
 
-    @media screen and (min-width: 1200px) {
-      width: 145px;
-      font-size: 26px;
-      line-height: 1.19;
-    }
+  @media screen and (max-width: 767px) {
+    padding: 16px 0 15px 0;
   }
 
-  .logo__text {
-    color: var(--primary-black-color);
-    }
+  @media screen and (min-width: 1200px) {
+    width: 145px;
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
 
-    .page-footer__logo__text {
-      color: var(--primary-white-color);
-    }
+.logo__text {
+  color: var(--primary-black-color);
+}
 
-    .page-footer__logo__link {
-      padding: 0px;
-      margin-bottom: 20px;
-    }
+.page-footer__logo__text {
+  color: var(--primary-white-color);
+}
+
+.page-footer__logo__link {
+  padding: 0px;
+  margin-bottom: 20px;
+}
