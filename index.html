@@ -19,7 +19,7 @@
     <div class="wraper">
       <header class="page-header">
         <!--site logo-->
-        <div class="container container--flex">
+        <div class="container row">
           <a href="./index.html" class="logo"
             >Web<span class="logo__text">Studio</span></a
           >
@@ -72,25 +72,44 @@
                     href="mailto:info@devstudio.com"
                     class="contact-list__link"
                   >
-                    <svg class="contact-list__icon" width="16" height="12">
+                    <svg
+                      class="contact-list__icon envelope"
+                      width="16"
+                      height="12"
+                    >
                       <use href="./images/icons.svg#envelope"></use>
                     </svg>
                     info@devstudio.com</a
                   >
                 </li>
                 <li class="contact-list__item">
-                  <a href="tel:+380961111111" class="contact-list__link contact-list__link--type">
-                    <svg class="contact-list__icon" width="10" height="16">
+                  <a
+                    href="tel:+380961111111"
+                    class="contact-list__link contact-list__link--type"
+                  >
+                    <svg
+                      class="contact-list__icon smartphone"
+                      width="10"
+                      height="16"
+                    >
                       <use href="./images/icons.svg#smartphone"></use></svg
                     >+38 096 111 11 11</a
                   >
                 </li>
               </ul>
               <ul class="page-header__social list">
-                <li class="page-header__social__item"><a href="#">Instagram</a></li>
-                <li class="page-header__social__item"><a href="#">Twitter</a></li>
-                <li class="page-header__social__item"><a href="#">Facebook</a></li>
-                <li class="page-header__social__item"><a href="#">LinkedIn</a></li>
+                <li class="page-header__social__item">
+                  <a href="#">Instagram</a>
+                </li>
+                <li class="page-header__social__item">
+                  <a href="#">Twitter</a>
+                </li>
+                <li class="page-header__social__item">
+                  <a href="#">Facebook</a>
+                </li>
+                <li class="page-header__social__item">
+                  <a href="#">LinkedIn</a>
+                </li>
               </ul>
             </div>
           </nav>
@@ -179,6 +198,10 @@
             <ul class="do__list list">
               <li class="do__item">
                 <img
+                  srcset="
+                    ./images/code-development.jpg   1x,
+                    ./images/code-development2x.jpg 2x
+                  "
                   src="./images/code-development.jpg"
                   alt="a person on a computer is engaged in code development"
                   width="370"
