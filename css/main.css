@@ -449,15 +449,15 @@ a {
   }
 }
 
-.logo__text {
+.logo span {
   color: var(--primary-black-color);
 }
 
-.page-footer__logo__text {
+.logo--reverse span {
   color: var(--primary-white-color);
 }
 
-.page-footer__logo__link {
+.footer-main .logo {
   padding: 0px;
   margin-bottom: 20px;
 }
