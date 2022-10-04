@@ -9,43 +9,10 @@
   }
 }
 
-.portfolio-btn__item--padding {
+.portfolio-btn__item--wraper {
   @media screen and (min-width: 468px) and (max-width: 578px) {
     margin-right: 111px;
   }
-}
-
-.portfolio__btn {
-  padding: 6px 22px;
-
-  background-color: var(--secondary-white-color);
-  color: var(--title-text-color);
-
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0), 0px 1px 2px rgba(0, 0, 0, 0),
-    0px 2px 2px rgba(0, 0, 0, 0);
-
-  transition: color 250ms var(--transition-cubic),
-    background-color 250ms var(--transition-cubic),
-    box-shadow 250ms var(--transition-cubic);
-
-  &:hover,
-  &:focus {
-    background-color: var(--accent-color);
-    color: var(--primary-white-color);
-
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-      0px 2px 2px rgba(0, 0, 0, 0.12);
-  }
-}
-
-.portfolio__btn--padding {
-  padding: 6px 25px;
 }
 
 //   examples
@@ -80,14 +47,14 @@
   object-fit: cover;
 }
 
-.portfolio__card__column {
+.portfolio__card {
   box-sizing: content-box;
   border: 1px solid var(--card-border-color);
 
   padding: 19px 23px 19px 23px;
 }
 
-.portfolio__item--tablet {
+.portfolio__card--tablet {
   @media screen and (min-width: 768px) and (max-width: 786px) {
     padding: 19px 23px 55px 23px;
   }

@@ -7,6 +7,10 @@
 
 .btn-main {
   display: inline-block;
+  text-align: center;
+
+  padding: 10px 32px;
+
   background-color: var(--accent-color);
   color: var(--primary-white-color);
   font-weight: 700;
@@ -15,13 +19,6 @@
   letter-spacing: 0.06em;
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-
-.section-hero__btn {
-  padding: 10px 32px;
-
-  align-items: center;
-  text-align: center;
 
   transition: background-color 250ms var(--transition-cubic);
 
@@ -29,36 +26,65 @@
   &:focus {
     background-color: var(--btn-hero-color);
   }
+}
 
+.btn-small {
+  padding: 6px 22px;
+
+  background-color: var(--secondary-white-color);
+  color: var(--title-text-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0), 0px 1px 2px rgba(0, 0, 0, 0),
+    0px 2px 2px rgba(0, 0, 0, 0);
+
+  transition: color 250ms var(--transition-cubic),
+    background-color 250ms var(--transition-cubic),
+    box-shadow 250ms var(--transition-cubic);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
+
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.btn-small--wraper {
+  padding: 6px 25px;
 }
 
 .subscribe__btn {    
   position: relative;
-  padding: 10px 28px;
+
+  padding: 10px 61px 10px 33px;
   margin-top: 20px;
 
   fill: var(--primary-white-color);
-
-  transition: background-color 250ms var(--transition-cubic);
-
-  &:hover,
-  &:focus {
-    background-color: var(--btn-hero-color);
-  }
 
   @media screen and (min-width: 1200px) {
     margin-top: 0;
     margin-left: 12px;
   }
 
-  &__label {
-    display: flex;
-    align-items: center;
+  &__icon {
+    position: absolute;
+    top: 13px;
+    right: 28px;
+    margin-left: 10px;
   }
-  
-  &__text {
-    width: 110px;
-    margin-right: 10px;
-  
-  }
+}
+
+.modal-form__btn {
+  display: flex;
+
+  padding: 10px 52px;
+  margin: 0 auto;
 }
