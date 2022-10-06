@@ -8,8 +8,15 @@
   border: none;
   background-color: transparent;
 
+  transition: fill 250ms var(--transition-cubic);
+
   @media screen and (min-width: 768px) {
     display: none;
+  }
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
   }
 }
 
@@ -37,10 +44,11 @@
     height: 796px;
     overflow-y: scroll;
     background-color: var(--primary-white-color);
-    padding: 48px 83px 48px 40px;
+    padding: 48px 40px;
 
     &.is-open {
-      display: block;
+      display: flex;
+      flex-direction: column;
     }
   }
 
