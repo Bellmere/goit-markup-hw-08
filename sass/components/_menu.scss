@@ -45,6 +45,7 @@
     overflow-y: scroll;
     background-color: var(--primary-white-color);
     padding: 48px 40px;
+    overflow: hidden;
 
     &.is-open {
       display: flex;

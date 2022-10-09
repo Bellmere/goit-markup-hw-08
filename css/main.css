@@ -67,6 +67,16 @@ a {
   padding-left: 15px;
   padding-right: 15px;
 }
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
@@ -298,6 +308,11 @@ a {
 .contact-list__item {
   display: flex;
 }
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .contact-list__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .contact-list__item:not(:last-child) {
     margin-right: 50px;
@@ -367,11 +382,10 @@ a {
 .page-header__social {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 .page-header__social .page-header__social__item:nth-child(n+2):before {
   content: "";
-  margin-right: 8px;
+  margin: 0 8px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   transform: rotate(90deg);
 }
@@ -434,6 +448,7 @@ a {
     overflow-y: scroll;
     background-color: var(--primary-white-color);
     padding: 48px 40px;
+    overflow: hidden;
   }
   .menu-container.is-open {
     display: flex;
@@ -852,7 +867,7 @@ a {
   padding: 19px 23px 19px 23px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 786px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .portfolio__card--tablet {
     padding: 19px 23px 55px 23px;
   }
@@ -952,12 +967,14 @@ a {
 @media screen and (min-width: 768px) {
   .info-wraper {
     display: flex;
+    align-items: baseline;
     padding-right: 74px;
     padding-left: 61px;
   }
 }
 @media screen and (min-width: 1200px) {
   .info-wraper {
+    align-items: unset;
     padding: 0;
     width: 50%;
   }
@@ -1003,13 +1020,14 @@ a {
   transition: color 250ms var(--transition-cubic);
 }
 
-.join {
-  padding-top: 60px;
-  margin: 0;
+@media screen and (max-width: 767px) {
+  .join {
+    padding-top: 60px;
+    margin: 0;
+  }
 }
 @media screen and (min-width: 768px) {
   .join {
-    padding-top: 5px;
     margin-left: auto;
   }
 }
@@ -1070,6 +1088,7 @@ a {
 
 .backdrop {
   position: fixed;
+  z-index: 9999;
   top: 0;
   left: 0;
   width: 100%;
@@ -1079,7 +1098,7 @@ a {
   overflow-y: scroll;
   transition: opacity 250ms var(--transition-cubic);
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 479px) {
   .backdrop {
     padding: 93px 15px;
   }
@@ -1267,7 +1286,8 @@ a {
 }
 
 .modal-form__check__icon {
-  display: inline-block;
+  display: flex;
+  flex-shrink: 0;
   margin-right: 8.38px;
   width: 16px;
   height: 15px;
