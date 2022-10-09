@@ -36,7 +36,8 @@
   }
 }
 
-.social-list__link--bg {
+.social-list__link--colorize {
+  fill: var(--primary-white-color);
   background-color: rgba(255, 255, 255, 0.1);
 }
 

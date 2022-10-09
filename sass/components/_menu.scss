@@ -1,7 +1,7 @@
 .menu-btn {
   display: inline-flex;
   position: relative;
-  z-index: 999;
+  z-index: 99;
   padding: 0;
   margin: 0;
   margin-left: auto;
@@ -20,32 +20,20 @@
   }
 }
 
-.menu-btn__icon__menu {
-  display: none;
-}
-
-.menu-btn.is-open .menu-btn__icon__menu {
-  display: block;
-}
-
-.menu-btn.is-open .menu-btn__icon__close {
-  display: none;
-}
-
 .menu-container {
+  display: none;
   width: 100%;
 
   @media screen and (max-width: 767px) {
-    display: none;
-    position: absolute;
+    position: fixed;
     z-index: 55;
     top: 0;
     left: 0;
-    height: 796px;
+    height: 100vh;
+    z-index: 999;
     overflow-y: scroll;
     background-color: var(--primary-white-color);
-    padding: 48px 40px;
-    overflow: hidden;
+    padding: 10px 15px 48px 40px;
 
     &.is-open {
       display: flex;
